@@ -230,9 +230,9 @@ li {
 } */
 
 .hero-photo {
-  width: 50px;             /* smaller base size */
+  width: 10px;             /* smaller base size */
   height: auto;             /* keeps correct aspect */
-  max-height: 50px;        /* prevents it from growing too tall */
+  max-height: 10px;        /* prevents it from growing too tall */
   object-fit: cover;
   border-radius: 12px;
   border: 2px solid #e1e1e5;
