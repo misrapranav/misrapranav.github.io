@@ -1,47 +1,58 @@
-/* Simple academic layout */
+/* Fresh, minimal, eye-friendly layout */
 
+/* Global reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Base typography + page background */
 body {
-  font-family: "Georgia", "Times New Roman", serif;
-  background: #ffffff;
-  color: #111111;
-  line-height: 1.6;
-
-  /* Centered page with reasonable width */
-  max-width: 900px;
-  margin: 24px auto;   /* top/bottom 24px, left/right auto */
-  padding: 0 16px;     /* small inner padding so text isn't glued to the edge */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1b1b1f;
+  background: #f5f5f7;
 }
 
 /* Links */
-
 a {
-  color: #003366;
+  color: #0056b8;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
-/* Container used inside sections */
-
-.container {
-  width: 100%;
-  margin: 0 auto;
+/* Main page layout */
+.site-header,
+.section,
+.site-footer {
+  background: #ffffff;
 }
 
-/* Header / nav */
+/* Wrap everything in a centered column */
+.site-header,
+.section,
+.site-footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px 20px;
+}
 
+/* Add spacing between sections */
+.section {
+  margin-top: 16px;
+  border-radius: 8px;
+  border: 1px solid #e1e1e5;
+}
+
+/* Header / navigation bar */
 .site-header {
-  border-bottom: 1px solid #dddddd;
-  margin-bottom: 24px;
-  padding-bottom: 8px;
+  margin-top: 24px;
+  border-radius: 8px;
+  border: 1px solid #e1e1e5;
 }
 
 .nav {
@@ -52,114 +63,104 @@ a:hover {
 }
 
 .nav a {
-  letter-spacing: 0.04em;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  color: #444a55;
+}
+.nav a:hover {
+  color: #000000;
 }
 
-/* Sections */
-
-.section {
-  padding: 16px 0;
-  border-bottom: 1px solid #eeeeee;
+/* Container (inner width) */
+.container {
+  max-width: 760px;
+  margin: 0 auto;
 }
 
-.section.alt {
-  background: #fafafa;
-}
-
-/* Hero */
-
+/* Hero section (name + tagline) */
 .hero {
-  padding-top: 8px;
+  border-bottom: 1px solid #ececf0;
+  padding-bottom: 16px;
 }
 
-/* Typography */
-
-/* Name line */
 h1 {
-  font-size: 24px;
-  margin-bottom: 4px;
+  font-size: 26px;
   font-weight: 600;
+  margin-bottom: 4px;
 }
 
-/* “Cognitive Neuroscience · AI · Language” */
 .subtitle {
+  font-size: 15px;
+  color: #5c6270;
   font-style: italic;
-  color: #555555;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph text */
+p {
+  margin-bottom: 10px;
   font-size: 15px;
 }
 
-/* Section headings: About, Research, etc. */
+/* Section headings */
 h2 {
-  font-size: 18px;
+  font-size: 19px;
+  font-weight: 600;
   margin-bottom: 8px;
   padding-bottom: 4px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #e0e0e4;
 }
 
-/* Subheadings: PhD, Teaching, etc. */
+/* Subheadings (PhD, Teaching, etc.) */
 h3 {
   font-size: 16px;
+  font-weight: 600;
   margin-bottom: 4px;
 }
 
-/* MAIN TEXT — controls About, Research, etc. */
-p,
-li {
-  font-size: 15px;   /* ← THIS is the main text size. Bump to 16px if you want bigger. */
-}
-
-/* Paragraph spacing */
-p {
-  margin-bottom: 12px;
-}
-
-/* Publication metadata, smaller grey text */
+/* Muted metadata (venues, years, etc.) */
 .muted {
-  color: #555555;
   font-size: 13px;
+  color: #6a6f7d;
 }
 
 /* Lists */
-
 ul {
-  margin-left: 18px;
+  margin-left: 20px;
   margin-bottom: 8px;
 }
-
 ul li {
   margin-bottom: 4px;
+  font-size: 15px;
 }
 
 .pub-list li {
   margin-bottom: 12px;
 }
 
-/* Experience / research items */
-
+/* Experience / research blocks */
 .item {
   margin-top: 12px;
   margin-bottom: 8px;
 }
 
 /* Talks list */
-
 .list-simple {
   list-style: none;
   margin-left: 0;
 }
-
 .list-simple li::before {
   content: "– ";
 }
 
 /* Footer */
-
 .site-footer {
-  border-top: 1px solid #dddddd;
-  margin-top: 20px;
-  padding: 8px 0 12px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  border: 1px solid #e1e1e5;
   font-size: 13px;
-  color: #555555;
+  color: #6a6f7d;
+  text-align: left;
 }
