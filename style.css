@@ -105,12 +105,12 @@ h3 {
 /* MAIN TEXT — controls About, Research, etc. */
 p,
 li {
-  font-size: 2px;   /* ← change THIS if you want all main text bigger/smaller */
+  font-size: 8px;   /* ← change THIS if you want all main text bigger/smaller */
 }
 
 /* Paragraph spacing */
 p {
-  margin-bottom: 2px;
+  margin-bottom: 8px;
 }
 
 /* Publication metadata, smaller grey text */
