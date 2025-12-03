@@ -5,45 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Pranav Misra</title>
   <link rel="stylesheet" href="style.css?v=7"/>
+  <style>
+    /* ===== nav + icon-bar alignment fix ===== */
+    .header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .nav {
+      display: flex;
+      gap: 16px;
+      font-size: 15px;
+    }
+    .icon-bar {
+      display: flex;
+      gap: 12px;
+    }
+    .icon-bar a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .icon-bar a svg {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      fill: currentColor;
+    }
+  </style>
 </head>
 <body>
   <div class="wrapper">
 
-    <!-- Top icon bar -->
-    <div class="top-links">
-      <a class="top-link top-link-text"
-         href="https://www.dropbox.com/scl/fi/48n5oii9em3ad4qnmveyy/PranavMisraCV.pdf?rlkey=rn5c4rdkqhubyv1cmznnv1qcr&dl=0"
-         target="_blank" rel="noreferrer">CV</a>
-
-      <a class="top-link" href="mailto:misra@g.harvard.edu" title="Email">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M0 0h24v24H0z" fill="none"/>
-          <path d="M12 13.5l8-6V18H4V7.5l8 6zM20 6H4l8 6 8-6z"/>
-        </svg>
-      </a>
-
-      <a class="top-link" href="https://www.linkedin.com/in/pranav-misra" target="_blank" rel="noreferrer" title="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M4 3C2.9 3 2 3.9 2 5s.9 2 2 2 2-.9 2-2S5.1 3 4 3zM2 8h4v12H2V8zm7 0h4v1.7c.6-1.1 2.3-2.2 4.6-2.2 4.9 0 5.8 3.2 5.8 7.4V20h-4v-6.3c0-1.5-.0-3.4-2.1-3.4-2.1 0-2.4 1.6-2.4 3.2V20h-4V8z"/>
-        </svg>
-      </a>
-
-      <a class="top-link" href="https://scholar.google.com/citations?user=cwcxlLkAAAAJ"
-         target="_blank" rel="noreferrer" title="Google Scholar">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-             viewBox="0 0 512 512" fill="currentColor">
-          <path d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3 33.6 0 64.6 11.1 89.6 29.9 9.1 6.9 17.4 14.7 24.8 23.5 5.6 6.6 10.6 13.8 15 21.3 2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"/>
-        </svg>
-      </a>      
-    </div>
-
-    <header class="site-header">
+    <div class="header-bar">
       <nav class="nav">
+        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#publications">Publications</a>
         <a href="#talks">Talks</a>
       </nav>
-    </header>
+
+      <div class="icon-bar">
+        <a href="https://www.dropbox.com/scl/fi/48n5oii9em3ad4qnmveyy/PranavMisraCV.pdf?rlkey=rn5c4rdkqhubyv1cmznnv1qcr&dl=0"
+           target="_blank" rel="noreferrer" title="CV">CV</a>
+        <a href="mailto:misra@g.harvard.edu" title="Email">
+          <svg viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 13.5l8-6V18H4V7.5l8 6zM20 6H4l8 6 8-6z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/pranav-misra" target="_blank" rel="noreferrer" title="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M4 3C2.9 3 2 3.9 2 5s.9 2 2 2 2-.9 2-2S5.1 3 4 3zM2 8h4v12H2V8zm7 0h4v1.7c.6-1.1 2.3-2.2 4.6-2.2 4.9 0 5.8 3.2 5.8 7.4V20h-4v-6.3c0-1.5-.0-3.4-2.1-3.4-2.1 0-2.4 1.6-2.4 3.2V20h-4V8z"/></svg>
+        </a>
+        <a href="https://scholar.google.com/citations?user=cwcxlLkAAAAJ" target="_blank" rel="noreferrer" title="Google Scholar">
+          <svg viewBox="0 0 512 512"><path d="M417 1H95C43 1 1 43 1 95v322c0 52 42 94 94 94h322c52 0 94-42 94-94V95c0-52-42-94-94-94zm-248 384c-50 0-90-40-90-90s40-90 90-90 90 40 90 90-40 90-90 90zm184-216c-26 0-47-21-47-47s21-47 47-47 47 21 47 47-21 47-47 47z"/></svg>
+        </a>
+      </div>
+    </div>
 
     <section id="home" class="section hero">
       <div class="container">
@@ -73,45 +88,38 @@
         <ul class="pub-list">
           <li>
             <strong>Invariant neural representation of parts of speech in the human brain</strong><br/>
-            <span class="muted">Misra, P., Shih, Y.-C., Yu, H.-Y., Weisholtz, D., Madsen, J. R., Sceillig, S. and Kreiman, G. (2024). bioRxiv preprint. [sEEG; language]</span><br/>
-            <a href="https://www.biorxiv.org/content/10.1101/2024.01.15.575788v1"
-               target="_blank" rel="noreferrer">bioRxiv preprint</a>
+            <span class="muted">Misra, P., Shih, Y.-C., Yu, H.-Y., Weisholtz, D., Madsen, J. R., Sceillig, S. & Kreiman, G. (2024). bioRxiv preprint.</span><br/>
+            <a href="https://www.biorxiv.org/content/10.1101/2024.01.15.575788v1" target="_blank" rel="noreferrer">bioRxiv preprint</a>
           </li>
           <li>
             <strong>Multimodal syntactic and semantic processing of sentences in the human brain</strong><br/>
-            <span class="muted">Misra, P., Sharma, A., Shih, Y.-C., Yu, H.-Y., Weisholtz, D., Madsen, J. R., Stone, S., Bulacio, J., Bingaman, W. and Kreiman, G. Manuscript in preparation (2024). [sEEG; deep learning; language]</span><br/>
-            <a href="https://www.dropbox.com/scl/fi/wtn0qwo9p2lszp060d16v/Chapter4.pdf?rlkey=dqkh0q1vzlxjac2b4rf4hz4q4&dl=0"
-               target="_blank" rel="noreferrer">Chapter 4 PDF</a>
+            <span class="muted">Misra, P., Sharma, A., Shih, Y.-C., Yu, H.-Y., Weisholtz, D., Madsen, J. R., Stone, S., Bulacio, J., Bingaman, W. & Kreiman, G. Manuscript in preparation (2024).</span><br/>
+            <a href="https://www.dropbox.com/scl/fi/wtn0qwo9p2lszp060d16v/Chapter4.pdf?rlkey=dqkh0q1vzlxjac2b4rf4hz4q4&dl=0" target="_blank" rel="noreferrer">Chapter 4 PDF</a>
           </li>
           <li>
             <strong>Brain TreeBank: Intracranial recordings of neural activity with multimodal stimulus</strong><br/>
-            <span class="muted">Wang, C., Yaari, A., Singh, A., Subramaniam, V., Rosenfarb, D., DeWitt, J., Misra, P., Madsen, J., Stone, S., Kreiman, G., Katz, B., Cases, I. and Barbu, A. NeurIPS (2024). [sEEG; deep learning; language]</span><br/>
-            <a href="https://openreview.net/pdf?id=KZlJF8kguO"
-               target="_blank" rel="noreferrer">OpenReview PDF</a>
+            <span class="muted">Wang, C., Yaari, A., Singh, A., Subramaniam, V., Rosenfarb, D., DeWitt, J., Misra, P., Madsen, J., Stone, S., Kreiman, G., Katz, B., Cases, I. & Barbu, A. (NeurIPS, 2024).</span><br/>
+            <a href="https://openreview.net/pdf?id=KZlJF8kguO" target="_blank" rel="noreferrer">OpenReview PDF</a>
           </li>
           <li>
             <strong>Decoding language from intracranial data: large-scale multimodal recordings</strong><br/>
-            <span class="muted">Misra, P. Conference abstract (2024). [sEEG; language]</span><br/>
-            <a href="https://nips.cc/virtual/2024/poster/97751a"
-               target="_blank" rel="noreferrer">NeurIPS 2024 poster</a>
+            <span class="muted">Misra, P. Conference abstract (2024).</span><br/>
+            <a href="https://nips.cc/virtual/2024/poster/97751a" target="_blank" rel="noreferrer">NeurIPS 2024 poster</a>
           </li>
           <li>
             <strong>Neural processing of nouns and verbs with large-scale intracranial recordings from naturalistic language</strong><br/>
-            <span class="muted">Wang, C., Yaari, A., Singh, A. K., Cases, I., Subramaniam, V., Rosenfarb, D., Misra, P., Madsen, J. R., Stone, S., Kreiman, G., Katz, B. and Barbu, A. Manuscript (2024). [sEEG; deep learning; language]</span><br/>
-            <a href="https://www.dropbox.com/scl/fi/bvjoke031nmq9m0ee1fgv/Decoding_Language.pdf?rlkey=817f9f75x6ud20y71ex8ix5fz&st=ebfy181u&dl=0"
-               target="_blank" rel="noreferrer">PDF</a>
+            <span class="muted">Wang, C., Yaari, A., Singh, A.K., Cases, I., Subramaniam, V., Rosenfarb, D., Misra, P., Madsen, J.R., Stone S., Kreiman G., Katz B. & Barbu A. (2024, manuscript).</span><br/>
+            <a href="https://www.dropbox.com/scl/fi/bvjoke031nmq9m0ee1fgv/Decoding_Language.pdf?rlkey=817f9f75x6ud20y71exix5fz&dl=0" target="_blank" rel="noreferrer">PDF</a>
           </li>
           <li>
             <strong>Hierarchical Sequence Composition in Recurrent Networks with Finite Automata</strong><br/>
-            <span class="muted">Misra, P. Manuscript (2024). [neural theory; computation]</span><br/>
-            <a href="https://www.dropbox.com/scl/fi/yhtxqrgiabdyzbt7j3u0r/Qual_Proposal.pdf?rlkey=0jbk6j3adco1aftbe6se3qzq7&st=vxmzec0i&dl=0"
-               target="_blank" rel="noreferrer">PDF</a>
+            <span class="muted">Misra, P. (2024, manuscript).</span><br/>
+            <a href="https://www.dropbox.com/scl/fi/yhtxqrgiabdyzbt7j3u0r/Qual_Proposal.pdf?rlkey=0jbk6j3adco1aftbe6se3qzq7&st=vxmzec0i&dl=0" target="_blank" rel="noreferrer">PDF</a>
           </li>
           <li>
             <strong>Minimal memory for details in real life events</strong><br/>
-            <span class="muted">Misra, P., Marconi, A., Peterson, M. and Kreiman, G. Nature Scientific Reports (2018). [machine learning; cognitive science; memory]</span><br/>
-            <a href="https://www.nature.com/articles/s41598-018-33792-2"
-               target="_blank" rel="noreferrer">Journal article</a>
+            <span class="muted">Misra, P., Marconi, A., Peterson, M. & Kreiman, G. (2018). Nature Scientific Reports.</span><br/>
+            <a href="https://www.nature.com/articles/s41598-018-33792-2" target="_blank" rel="noreferrer">Journal article</a>
           </li>
         </ul>
       </div>
@@ -136,7 +144,9 @@
       </div>
     </footer>
 
-    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </div>
 </body>
 </html>
