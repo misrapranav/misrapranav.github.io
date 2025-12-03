@@ -21,8 +21,8 @@ body {
   background: var(--bg);
   color: var(--fg);
   line-height: 1.55;
-  font-size: 20px;          /* ← change this to shrink/grow all text */
-  border: 10px solid #cccccc;
+  font-size: 50px;          /* ← change this to shrink/grow all text */
+  border: 100px solid #cccccc;
   margin: 24px;
   padding: 20px;
 }
