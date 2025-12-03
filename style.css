@@ -223,8 +223,8 @@ li {
 
 /* Small rounded-square headshot next to name */
 .hero-photo {
-  width: 90px;
-  height: 90px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
   border-radius: 10px;
   border: 2px solid #e1e1e5;
