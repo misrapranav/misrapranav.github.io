@@ -7,7 +7,7 @@
   --accent: #003366;
 
   /* MASTER TEXT SCALE — change ONLY this */
-  --scale: 1.5;   /* 1.0 = default, 1.5 = +50%, 0.85 = smaller */
+  --scale: 5;   /* 1.0 = default, 1.5 = +50%, 0.85 = smaller */
 
   --maxw: 720px;
 }
