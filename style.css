@@ -1,4 +1,4 @@
-/* Simple academic layout — no fancy tricks */
+/* Simple academic layout */
 
 * {
   box-sizing: border-box;
@@ -12,8 +12,10 @@ body {
   color: #111111;
   line-height: 1.6;
 
-  /* 15% margins on left/right */
-  margin: 24px 20%;
+  /* Centered page with reasonable width */
+  max-width: 900px;
+  margin: 24px auto;   /* top/bottom 24px, left/right auto */
+  padding: 0 16px;     /* small inner padding so text isn't glued to the edge */
 }
 
 /* Links */
@@ -30,7 +32,7 @@ a:hover {
 /* Container used inside sections */
 
 .container {
-  max-width: 500px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -57,7 +59,7 @@ a:hover {
 /* Sections */
 
 .section {
-  padding: 10px 0;
+  padding: 16px 0;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -105,12 +107,12 @@ h3 {
 /* MAIN TEXT — controls About, Research, etc. */
 p,
 li {
-  font-size: 15px;   /* ← change THIS if you want all main text bigger/smaller */
+  font-size: 15px;   /* ← THIS is the main text size. Bump to 16px if you want bigger. */
 }
 
 /* Paragraph spacing */
 p {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 /* Publication metadata, smaller grey text */
