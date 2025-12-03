@@ -114,7 +114,6 @@ h3 {
 
 p {
   margin-bottom: 0.7rem;
-  font-size: 0.6px;          /* ← change this to shrink/grow all text */
 }
 
 .muted {
