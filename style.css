@@ -105,7 +105,7 @@ h3 {
 /* MAIN TEXT — controls About, Research, etc. */
 p,
 li {
-  font-size: 8px;   /* ← change THIS if you want all main text bigger/smaller */
+  font-size: 10px;   /* ← change THIS if you want all main text bigger/smaller */
 }
 
 /* Paragraph spacing */
