@@ -206,3 +206,25 @@ li {
   font-size: 13px;
   color: #6a6f7d;
 }
+
+
+/* ---- Hero photo next to name (square with rounded edges) ---- */
+
+.hero-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-photo {
+  width: 180px;       /* change if you want bigger/smaller */
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;   /* <--- square with soft edges */
+  border: 2px solid #e1e1e5;
+}
