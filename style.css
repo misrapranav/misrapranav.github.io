@@ -1,4 +1,4 @@
-/* Fresh, minimal, eye-friendly layout */
+/* Clean, aligned, minimal academic layout */
 
 /* Global reset */
 * {
@@ -7,119 +7,95 @@
   padding: 0;
 }
 
-/* Base typography + page background */
+/* Base */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.65;
   color: #1b1b1f;
   background: #f5f5f7;
+
+  /* Smaller overall margins */
+  padding: 24px 0;
 }
 
-/* Links */
-a {
-  color: #0056b8;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-/* Main page layout */
-.site-header,
-.section,
-.site-footer {
-  background: #ffffff;
-}
-
-/* Wrap everything in a centered column */
-.site-header,
-.section,
-.site-footer {
-  max-width: 900px;
+/* Unified wrapper for perfect alignment */
+.wrapper {
+  max-width: 860px;   /* reduce from 900 to tighten feel */
   margin: 0 auto;
-  padding: 16px 20px;
-}
-
-/* Add spacing between sections */
-.section {
-  margin-top: 16px;
-  border-radius: 8px;
+  background: #ffffff;
   border: 1px solid #e1e1e5;
+  border-radius: 6px;
+
+  /* even, light padding */
+  padding: 20px 28px;
 }
 
-/* Header / navigation bar */
-.site-header {
-  margin-top: 24px;
-  border-radius: 8px;
-  border: 1px solid #e1e1e5;
-}
-
+/* Navigation */
 .nav {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   font-size: 13px;
+  margin-bottom: 16px;
 }
 
 .nav a {
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-weight: 500;
   color: #444a55;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
 }
 .nav a:hover {
   color: #000000;
 }
 
-/* Container (inner width) */
-.container {
-  max-width: 760px;
-  margin: 0 auto;
+/* Sections */
+.section {
+  padding: 16px 0;
+  border-bottom: 1px solid #e8e8eb;
+}
+.section:last-of-type {
+  border-bottom: none;
 }
 
-/* Hero section (name + tagline) */
-.hero {
-  border-bottom: 1px solid #ececf0;
-  padding-bottom: 16px;
+.section.alt {
+  background: transparent; /* remove weird background blocks */
 }
 
+/* Typography */
 h1 {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 600;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .subtitle {
   font-size: 15px;
-  color: #5c6270;
   font-style: italic;
+  color: #6a6f7d;
   margin-bottom: 10px;
 }
 
-/* Paragraph text */
-p {
-  margin-bottom: 10px;
-  font-size: 15px;
-}
-
-/* Section headings */
 h2 {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 600;
-  margin-bottom: 8px;
   padding-bottom: 4px;
-  border-bottom: 1px solid #e0e0e4;
+  border-bottom: 1px solid #dcdce0;
+  margin-bottom: 12px;
 }
 
-/* Subheadings (PhD, Teaching, etc.) */
 h3 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
-/* Muted metadata (venues, years, etc.) */
+p {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
 .muted {
   font-size: 13px;
   color: #6a6f7d;
@@ -128,24 +104,14 @@ h3 {
 /* Lists */
 ul {
   margin-left: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
-ul li {
-  margin-bottom: 4px;
+li {
+  margin-bottom: 6px;
   font-size: 15px;
 }
 
-.pub-list li {
-  margin-bottom: 12px;
-}
-
-/* Experience / research blocks */
-.item {
-  margin-top: 12px;
-  margin-bottom: 8px;
-}
-
-/* Talks list */
+/* Talks bullet style */
 .list-simple {
   list-style: none;
   margin-left: 0;
@@ -156,11 +122,7 @@ ul li {
 
 /* Footer */
 .site-footer {
-  margin-top: 16px;
-  margin-bottom: 24px;
-  border-radius: 8px;
-  border: 1px solid #e1e1e5;
+  margin-top: 20px;
   font-size: 13px;
   color: #6a6f7d;
-  text-align: left;
 }
