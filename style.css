@@ -211,25 +211,23 @@ li {
 /* === HERO ROW THAT NEVER WRAPS === */
 .hero-row {
   display: flex;
-  align-items: flex-start;
+  flex-wrap: nowrap;          /* NEVER wrap */
+  align-items: center;
   justify-content: space-between;
   gap: 16px;
-  flex-wrap: nowrap;         /* <-- THE KEY: NEVER wrap */
 }
 
-/* text stays normal */
 .hero-main {
-  flex: 1;
-  min-width: 0;              /* prevents overflow */
+  flex: 1 1 auto;             /* allow text block to shrink */
+  min-width: 0;               /* <-- THE MAGIC FIX */
 }
 
-/* image stays small */
 .hero-photo {
-  width: 135px;
+  width: 135px;               /* your desired size */
   height: 135px;
   object-fit: cover;
   border-radius: 10px;
   border: 2px solid #e1e1e5;
-  flex-shrink: 0;            /* <-- VERY IMPORTANT */
+  flex-shrink: 0;             /* do NOT shrink image */
 }
 
